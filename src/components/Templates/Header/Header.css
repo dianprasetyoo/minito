@@ -42,6 +42,39 @@
     position: absolute;
     top: 0;
   }
+  .header-image-mobile {
+    display: none;
+  }
+  .header-container-mobile {
+    display: none;
+  }
+  .header-image-mobile {
+    display: none;
+  }
+  .header-content-mobile {
+    display: none;
+  }
+  .text-content-mobile {
+    display: none;
+  }
+  .main-banner-mobile {
+    display: none;
+  }
+  .header-content {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 100;
+  }
+  .button-header-content {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 30px 0px 0px 30px;
+  }
+  .text-content {
+    margin: 30px 0px 0px 30px;
+  }
 }
 
 /* Untuk tampilan mobile */
@@ -50,6 +83,35 @@
     display: none;
   }
   .header-container-mobile {
+    display: flex;
     flex-direction: row;
+    position: relative;
+    z-index: 99;
+    justify-content: space-between;
+    padding: 32px 12px 32px 12px;
+  }
+  .header-image {
+    display: none;
+  }
+  .header-image-mobile {
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+  }
+  .header-content-mobile {
+    margin: 0px 30px 0px 30px;
+  }
+  .text-content-mobile {
+    margin-top: 12px;
+  }
+  .header-content {
+    display: none;
+  }
+  .button-header-content {
+    display: none;
+  }
+  .text-content {
+    display: none;
   }
 }

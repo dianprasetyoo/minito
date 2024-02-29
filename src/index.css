@@ -12,54 +12,79 @@ code {
     monospace;
 } */
 
-html, body {
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 130px 28px 130px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
+  }
+}
+
+/* Untuk tampilan mobile */
+@media only screen and (max-width: 767px) {
+  .header-container {
+    display: none;
+  }
+}
+
+html, h1, h2, p,
+body {
   margin: 0;
   padding: 0;
 }
 
 @font-face {
-  font-family: 'Gilroy-Regular';
-  src: local('Gilroy-Regular'), url(./assets/fonts/Gilroy-Regular.ttf) format('truetype');
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"),
+    url(./assets/fonts/Gilroy-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Semibold';
-  src: local('Gilroy-Bold'), url(./assets/fonts/Gilroy-SemiBold.ttf) format('truetype');
+  font-family: "Gilroy-Semibold";
+  src: local("Gilroy-Bold"),
+    url(./assets/fonts/Gilroy-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Bold';
-  src: local('Gilroy-Bold'), url(./assets/fonts/Gilroy-Bold.ttf) format('truetype');
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"),
+    url(./assets/fonts/Gilroy-Bold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Thin';
-  src: local('Gilroy-Thin'), url(./assets/fonts/Gilroy-Thin.ttf) format('truetype');
+  font-family: "Gilroy-Thin";
+  src: local("Gilroy-Thin"),
+    url(./assets/fonts/Gilroy-Thin.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Medium';
-  src: local('Gilroy-Medium'), url(./assets/fonts/Gilroy-Medium.ttf) format('truetype');
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"),
+    url(./assets/fonts/Gilroy-Medium.ttf) format("truetype");
 }
 
-.font-normal{
-  font-family: 'Gilroy-Regular', sans-serif;
+.font-normal {
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
-.font-semibold{
-  font-family: 'Gilroy-Semibold', sans-serif;
+.font-semibold {
+  font-family: "Gilroy-Semibold", sans-serif;
 }
 
-.font-bold{
-  font-family: 'Gilroy-Bold', sans-serif;
+.font-bold {
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
-.font-thin{
-  font-family: 'Gilroy-Thin', sans-serif;
+.font-thin {
+  font-family: "Gilroy-Thin", sans-serif;
 }
 
-.font-medium{
-  font-family: 'Gilroy-Medium', sans-serif;
+.font-medium {
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
 .bg-primary {
@@ -67,11 +92,11 @@ html, body {
 }
 
 .bg-secondary {
-  background-color: #F7DBA7;
+  background-color: #f7dba7;
 }
 
 .bg-light {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
 }
 
 .bg-neutral {
@@ -79,16 +104,15 @@ html, body {
 }
 
 .bg-disabled {
-  background-color: #99A2A5;
+  background-color: #99a2a5;
 }
-
 
 .text-primary {
   color: #003459;
 }
 
 .text-secondary {
-  color: #FDFDFD;
+  color: #fdfdfd;
 }
 
 .text-neutral {
@@ -96,5 +120,79 @@ html, body {
 }
 
 .text-disabled {
-  color: #99A2A5;
+  color: #99a2a5;
+}
+
+.text-3xs {
+  font-size: 12px;
+}
+
+.text-2xs {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 24px;
+}
+
+.text-lg {
+  font-size: 36px;
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+  .text-xxl {
+    font-size: 60px;
+  }
+  .text-xl {
+    font-size: 46px;
+  }
+  .text-sm {
+    font-size: 18px;
+  }
+}
+/* for mobile */
+@media only screen and (max-width: 767px) {
+  .text-xxl {
+    font-size: 34px;
+  }
+  .text-xl {
+    font-size: 24px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.px-md {
+  padding: 0 8px 0 8px;
+}
+
+.px-lg {
+  padding: 0 12px 0 12px;
+}
+
+.px-xl {
+  padding: 0 16px 0 16px;
 }
