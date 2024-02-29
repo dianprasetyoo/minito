@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Footer, Header } from "../components/Templates";
+import { Footer, Header } from "../components";
 import { HomePage } from "../pages/home";
 import { PAGES } from "../config/constants";
 import { createBrowserHistory } from "history";

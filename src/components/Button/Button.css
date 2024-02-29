@@ -1,0 +1,42 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 57px;
+    gap: 10px;
+    padding: 12px 28px 12px 28px;
+}
+
+.button--fill {
+    background-color: #003459;
+    outline: none;
+    border: none;
+}
+
+.button--outline {
+    border: 1px solid #003459;
+    background-color: transparent;
+    opacity: 100;
+}
+
+.button--fill:hover {
+    cursor: pointer;
+    background-color: #003459c0;
+}
+
+.button--outline:hover {
+    cursor: pointer;
+    background-color: #003459be;
+    color: white;
+}
+
+.button--icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--icon:hover {
+    cursor: pointer;
+}

@@ -1,4 +1,5 @@
-.header-container {
+@media only screen and (min-width: 768px) {
+  .header-container {
     display: flex;
     justify-content: space-between;
     padding: 28px 130px 28px 130px;
@@ -6,29 +7,49 @@
     top: 0;
     overflow: hidden;
     z-index: 99;
-}
-.header-left {
+  }
+  .header-left {
     display: flex;
     gap: 48px;
     align-items: center;
-}
-.header-nav {
+  }
+  .header-nav {
     display: flex;
     gap: 56px;
-}
+  }
 
-.header-nav a {
+  .header-nav a {
     text-decoration: none;
     color: #003459;
-}
+  }
 
-.header-nav a:hover {
+  .header-nav a:hover {
     color: #00345990;
-}
-.header-image {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .header-right input {
+    width: 280px;
+  }
+  .header-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+  }
 }
 
+/* Untuk tampilan mobile */
+@media only screen and (max-width: 767px) {
+  .header-container {
+    display: none;
+  }
+  .header-container-mobile {
+    flex-direction: row;
+  }
+}

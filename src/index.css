@@ -33,6 +33,11 @@ html, body {
 }
 
 @font-face {
+  font-family: 'Gilroy-Thin';
+  src: local('Gilroy-Thin'), url(./assets/fonts/Gilroy-Thin.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Gilroy-Medium';
   src: local('Gilroy-Medium'), url(./assets/fonts/Gilroy-Medium.ttf) format('truetype');
 }
@@ -49,6 +54,47 @@ html, body {
   font-family: 'Gilroy-Bold', sans-serif;
 }
 
+.font-thin{
+  font-family: 'Gilroy-Thin', sans-serif;
+}
+
 .font-medium{
   font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.bg-primary {
+  background: #003459;
+}
+
+.bg-secondary {
+  background-color: #F7DBA7;
+}
+
+.bg-light {
+  background-color: #FDFDFD;
+}
+
+.bg-neutral {
+  background-color: #667479;
+}
+
+.bg-disabled {
+  background-color: #99A2A5;
+}
+
+
+.text-primary {
+  color: #003459;
+}
+
+.text-secondary {
+  color: #FDFDFD;
+}
+
+.text-neutral {
+  color: #667479;
+}
+
+.text-disabled {
+  color: #99A2A5;
 }
