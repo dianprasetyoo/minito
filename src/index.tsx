@@ -9,7 +9,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div className="font-bold">Test</div>
     <App />
   </React.StrictMode>
 );
